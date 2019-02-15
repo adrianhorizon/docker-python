@@ -31,18 +31,10 @@ A continuación
 	
 Y para ejecutarlo (si se está ejecutando el volumen con el nombre `hitos`)
 
-	sudo docker run -it --rm -p 8000:80 --volumes-from hitos jjmerelo/hugitos
+	sudo docker run -it --rm -p 8000:80 --volumes-from hitos adhorizon/mytag
 	
 `-rm` es necesario para que se borre una vez ejecutado, `-it` para que
 se ejecute el terminal y salga el log y `-p 80:8000` es un *mapping*
 del puerto del contenedor (80) al del host local
 (8000). `--volumes-from hitos` monta el volumen que exporta el
 contenedor `hitos`.
-
-Se encuentra alojado en [Docker Hub](https://hub.docker.com/r/jjmerelo/tests-python/)
-
-## Prueba
-
-Despliegue: https://iv-2017.herokuapp.com/
-Contenedor: https://tests-python-syboghyvul.now.sh
-
